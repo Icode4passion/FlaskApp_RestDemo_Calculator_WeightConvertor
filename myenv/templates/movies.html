@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movies App</title>
+</head>
+<body>
+  <h1>Movies App</h1>
+  <h4>Fill in the details</h4>
+
+  <form action="{{ url_for('movies') }}" method="POST">
+    id <input type="text" name="id">
+    Movie name<input type="text" name="movie">
+    Director name<input type="text" name="director">
+    Year of Movie<input type="text" name="year">
+    <input type="submit" name="submit">
+  </form>
+
+
+</body>
+</html>

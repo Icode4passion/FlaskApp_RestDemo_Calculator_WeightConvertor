@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+  
+{% block content %}
+<div id="content">
+<form action="." method="POST">
+	<div>
+		<h2>Speed Calculator</h2>
+	</div>
+    <div>
+      <label >Enter Distance in kilometers: 
+      </label>
+      
+      <input type="text" name="distance" >
+      <br>
+    </div>
+    <div>
+      <label >Enter Time in seconds:</label>
+      <input type="text" name="seconds" >
+    </div>
+    
+    <div>
+      <input type="submit" name="submit" value="Send">
+    </div>
+  </form>
+   
+  </div>
+    
+{% endblock %}

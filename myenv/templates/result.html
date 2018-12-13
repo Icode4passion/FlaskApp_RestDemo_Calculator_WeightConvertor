@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Company Detailes 
+	</title>
+</head>
+<body>
+	<table>
+		<thead>
+			<th>
+				Name
+			</th>
+			<th>
+				Company site
+			</th>
+		</thead>
+
+		{% for row in rows %}
+		<tr>
+			<td>{{ row['name'] }}</td>
+			<td>{{ row['url'] }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+	
+	<a href="/">Go to Home Page</a>
+</body>
+</html>
